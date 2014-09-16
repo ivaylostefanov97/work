@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="bootstrap/css/app.css" />
+    </head>
+    <body ng-app="computers" ng-controller='pageController'>
+        <br>
+        <div class="container" style="width:600px;">
+            <div class="well bs-component">
+              <form class="form-horizontal" id="local_storage_form" >
+                <fieldset>
+                  <legend>Sign up</legend>
+                  <div class="form-group">
+                    <label for="username" class="col-lg-2 control-label">Username</label>
+                    <div class="col-lg-10">
+                      <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                      <br>
+                      <!-- <form action="success.html">  -->
+                      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                      <!-- </form> -->
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
+          </div>
+
+        <script src="libs/jquery-1.11.1.min.js"></script>
+        <script src="libs/bootstrap.min.js"></script>
+        <script src="libs/angular.min.js"></script>
+        <script src="controllers/app.js"></script>
+        <script src="controllers/controller.js"></script>
+        <script src="scripts/registration.js"></script>
+    </body>
+</html>
