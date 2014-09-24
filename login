@@ -7,7 +7,8 @@
     </head>
     <body ng-app="computers" ng-controller='pageController'>
 
-            <div class="container" style="width:400px;">
+        <fieldset>
+            <div class="container" class="bs-component" style="width:400px;">
               <form class="form-signin" role="form">
                 <h2 class="form-signin-heading">Please sign in</h2>
                 <input type="username" id="the-username" class="form-control" placeholder="Username" required="" autofocus="">
@@ -18,6 +19,7 @@
                 <p>Don't have an account?<a href="signUp.html"> Sign up</a></p>
               </form>
             </div>
+        </fieldset>
 
         <script src="libs/jquery-1.11.1.min.js"></script>
         <script src="libs/bootstrap.min.js"></script>
