@@ -6,33 +6,32 @@
         <link rel="stylesheet" href="bootstrap/css/app.css" />
     </head>
     <body ng-app="computers" ng-controller='pageController'>
-       
 
         <div class="navbar navbar-default">
           <div class="container">
               <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">Types</a>
+                    <a href="types.html">Types</a>
                 </li>
                 <li>
-                    <a href="#">Models</a>
+                    <a href="models.html">Models</a>
                 </li>
                 <li>
-                    <a href="#">Parts</a>
+                    <a href="Parts.html">Parts</a>
                 </li>
                 <li>
-                    <a href="#">Computers</a>
+                    <a href="computers.html">Computers</a>
                 </li>
                 <li>
-                    <a href="#">Network devices</a>
+                    <a href="networkDevices.html">Network devices</a>
                 </li>
                 <li>
-                    <a href="#">networks</a>
+                    <a href="networks.html">networks</a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.html">{{ signIn }}</a></li>
-                <li><a href="signUp.html">{{ signUp }}</a></li>
+                <li><a href="#">{{ username }}</a></li>
+                <li><a href="#" id="logOut">{{ logOut }}</a></li>
               </ul>
             </div>
           </div>
@@ -42,6 +41,10 @@
         <script src="libs/bootstrap.min.js"></script>
         <script src="libs/angular.min.js"></script>
         <script src="controllers/app.js"></script>
+        <script src="scripts/add.js"></script>
+        <script src="scripts/delete.js"></script>
+        <script src="scripts/change.js"></script>
+        <script src="scripts/cookie.js"></script>
         <script src="controllers/controller.js"></script>
     </body>
 </html>
