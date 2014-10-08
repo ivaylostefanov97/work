@@ -27,12 +27,12 @@
                     <a href="networkDevices.html">Network devices</a>
                 </li>
                 <li>
-                    <a href="networks.html">networks</a>
+                    <a href="networks.html">Networks</a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.html">{{ signIn }}</a></li>
-                <li><a href="signUp.html">{{ signUp }}</a></li>
+                <li><a href="#">{{ username }}</a></li>
+                <li><a href="#" id="logOut">{{ logOut }}</a></li>
               </ul>
             </div>
           </div>
@@ -44,11 +44,17 @@
                 <fieldset>
                   <legend align="center">Models</legend>
                      <!-- <div class="form-group"> -->
+                      <label class="control-label" for="search">Search</label>
+                      <input type="text" class="form-control" id="search" width="100px"><br>
+                      <a href="#" class="btn btn-primary" id="find">Search</a><br>
                       <label class="control-label" for="inputDefault">Add model</label>
                       <input type="text" class="form-control" id="inputDefault" required>
+                      <label class="control-label" for="type">Select type for model</label>
+                      <input type="text" class="form-control" id="type" required>
                     <!-- </div> -->
                     <br>
                     <a href="#" class="btn btn-primary" id="add">Add</a>
+                    <!-- <a href="#" class="btn btn-primary" id="add">Search</a> -->
                     <br> 
                     <div class="bs-component">
                       <br> 
@@ -69,5 +75,6 @@
         <script src="scripts/delete.js"></script>
         <script src="scripts/change.js"></script>
         <script src="scripts/cookie.js"></script>
+        <script src="scripts/search.js"></script>
     </body>
 </html>
