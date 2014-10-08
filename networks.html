@@ -8,7 +8,7 @@
     <body ng-app="computers" ng-controller='pageController'>
        
 
-        <div class="navbar navbar-default">
+       <div class="navbar navbar-default">
           <div class="container">
               <ul class="nav navbar-nav">
                 <li>
@@ -42,17 +42,22 @@
             <div class="well bs-component">
               <form class="form-horizontal">
                 <fieldset>
-                  <legend align="center">Networks</legend>
+                  <legend align="center">Parts</legend>
                      <!-- <div class="form-group"> -->
+
                       <label class="control-label" for="search">Search</label>
                       <input type="text" class="form-control" id="search" width="100px"><br>
                       <a href="#" class="btn btn-primary" id="find">Search</a><br>
-                      <label class="control-label" for="inputDefault">Add network</label>
+                      <label class="control-label" for="inputDefault">Add part</label>
                       <input type="text" class="form-control" id="inputDefault" required>
+                      <label class="control-label" for="type">Select model for part</label>
+                      <input type="text" class="form-control" id="type" required>
+                      <label class="control-label" for="type-1">Select computer or device for part</label>
+                      <input type="text" class="form-control" id="type-1" required>
                     <!-- </div> -->
                     <br>
                     <a href="#" class="btn btn-primary" id="add">Add</a>
-                    <!-- <a href="#" class="btn btn-primary" id="add">Search</a> -->
+
                     <br> 
                     <div class="bs-component">
                       <br> 
